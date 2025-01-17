@@ -1,0 +1,215 @@
+//basic colors
+$white: #ffff;
+$black: #000;
+$light-gray: #c9c9c9;
+
+
+//Theme Colors
+$theme-red: #E82D2D;
+$theme-pink: #FF9393;
+$theme-purple: #55033F;
+$theme-green: #82A667;
+$theme-green-2: #3A6351;
+$theme-green-3: #00AE70;
+$theme-brown: #865439;
+$theme-blue: #1F59AF;
+$theme-blue-2: #288ED9;
+$theme-orange: #FFA714;
+$theme-purple-2: #867AE9;
+$theme-gold: #ECB65C;
+$theme-dark-background: #363D4D;
+$theme-default: #0d6efd;
+$theme-second-color: #383838;
+$theme-third-color: rgb(198 198 198 / 7%);
+
+//Theme Shadow
+$ts-box-shadow: 0px 2px 35px 0px rgb(59 67 89 / 6%);
+$theme-second-color-shadow: 0 0 7px 0px rgb(255 167 1 / 51%);
+$theme-default-color-shadow: 0 0 7px #ef405663;
+// Detail Colors
+$title-color: #333;
+$subtitle-color: #666;
+$paragraph-color: #666;
+$page-header-color: #eee;
+$breadcrumb-color: #666;
+$red: #dc3545;
+
+//header
+$header-search-border: #f3f3f3;
+$header-search-btn: $white;
+$header-search-placeholder-color: #a8a8a8;
+
+
+//footer colors
+$footer-light: #f2f2f2;
+$footer-dark: #222;
+
+
+//Customize Bootstrap Variables
+
+//Container width
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1220px,
+        xxl: 1320px
+);
+
+
+//Font family
+$default-font-family: IRANYekanXFaNum;
+$font-family-base: $default-font-family, sans-serif !important;
+$font-family-sans-serif: $default-font-family !default;
+;
+$font-family-monospace: $default-font-family !important;
+$input-btn-font-family: $font-family-sans-serif !default;
+$btn-font-family: $default-font-family, sans-serif !important;
+
+// $font-size-base affects the font size of the body text
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$h1-font-size: $font-size-base * 1.8;
+$h2-font-size: $font-size-base * 1.6;
+$h3-font-size: $font-size-base * 1.4;
+$h4-font-size: $font-size-base * 1;
+$h5-font-size: .8;
+$h6-font-size: .7;
+// scss-docs-end font-variables
+
+
+//bootstrap inputs variables
+$input-focus-box-shadow: none;
+$input-border-radius: 0;
+$input-focus-border-color: var(--theme-default);
+
+
+//bootstrap select box variables
+$form-select-border-radius: 0;
+$form-select-focus-box-shadow: 0;
+$form-select-focus-border-color: var(--theme-default);
+
+
+//bootstrap checkbox variables
+$form-check-input-checked-bg-color: $black;
+$form-check-input-checked-border-color: none;
+$form-check-input-border-radius: 0;
+$form-check-input-focus-border: 0;
+$form-check-input-focus-box-shadow: 0;
+
+//bootstrap form range thumb variables
+$form-range-thumb-focus-box-shadow: 0;
+$form-range-thumb-bg: $black;
+$form-range-thumb-active-bg: tint-color($black, 70%);
+
+
+//bootstrap pagination variables
+$pagination-focus-box-shadow: 0;
+$pagination-focus-color: var(--theme-default);
+$pagination-hover-color: var(--theme-default);
+$pagination-margin-start: .3rem;
+$pagination-border-radius: 0;
+$pagination-color: $black;
+$pagination-active-color: $white;
+$pagination-active-bg: var(--theme-default);
+$pagination-active-border-color: none;
+
+
+//accordions bootstrap variables
+$accordion-button-active-bg: #f9f9f9;
+$accordion-button-active-color: var(--theme-default);
+$accordion-button-focus-border-color: none;
+$accordion-button-focus-box-shadow: none;
+$accordion-icon-color: $black;
+$accordion-icon-active-color: $black;
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$black}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{var(--theme-default)}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-border-radius: none;
+
+
+//link and nav-link variables
+$link-color: inherit;
+$link-hover-color: var(--theme-default);
+$link-decoration: none;
+$nav-link-color: $light-gray;
+$nav-link-hover-color: $black;
+$nav-tabs-link-active-color: var(--theme-default);
+
+
+//customize bootstrap colors
+$primary: #0d6efd;
+$secondary: #5c636a;
+$success: #157347;
+$info: #31d2f2;
+$warning: #ffca2c;
+$danger: #bb2d3b;
+$light: #f8f9fa;
+$dark: #333;
+$theme-colors: (
+        "primary": $primary,
+        "secondary": $secondary,
+        "success": $success,
+        "info": $info,
+        "warning": $warning,
+        "danger": $danger,
+        "light": $light,
+        "dark": $dark
+);
+
+
+//media query
+$minMobile: "(min-width:576px)";
+$maxMobile: "(max-width:767px)";
+$maxSmall: "(max-width:991px)";
+$minSmall: "(min-width:768px)";
+$minMedium: "(min-width:992px)";
+$minLarge: "(min-width:1200px)";
+
+//add to cart alert
+$add-to-cart-alert-bg: var(--theme-default);
+$add-to-cart-text-color: $white;
+
+//navbar variables
+$nav-active-color: var(--theme-default);
+$nav-submenu-background-color: $white;
+$nav-mainmenu-font-weight: 400;
+$nav-submenu-font-weight: normal;
+$nav-submenu-box-shadow: 0px 0px 17px 3px #f6f6f6;
+$nav-submenu-font-color: $paragraph-color;
+$nav-mobile-background-color: $white;
+$nav-mobile-box-shadow: 0px 0px 17px 3px #f6f6f6;
+$header-brand-logo-size: 150px;
+
+//default b radius
+$ts-default-border-radius: .4rem;
+
+//default max width
+$default-max-width: 1320px;
+
+//alert
+$ts-alert-info-bg:#1e85be1f;
+$ts-alert-info-color:#1e85be;
+$ts-alert-success-bg:#157347;
+$ts-alert-success-color:#ffffff;
+/*----------------------------------
+default-shadow
+------------------------------------*/
+
+.default-shadow {
+  --ts-box-shadow: #{$ts-box-shadow};
+}
+
+:root {
+  --theme-default: #{$theme-default};
+  --theme-second-color: #{$theme-second-color};
+  --theme-third-color: #{$theme-third-color};
+  --theme-second-color-shadow: #{$theme-second-color-shadow};
+  --theme-default-color-shadow: #{$theme-default-color-shadow};
+  --theme-default-border-radius: #{$ts-default-border-radius};
+  --theme-alert-info-bg: #{$ts-alert-info-bg};
+  --theme-alert-info-color: #{$ts-alert-info-color};
+  --theme-alert-success-bg: #{$ts-alert-success-bg};
+  --theme-alert-success-color: #{$ts-alert-success-color};
+  --theme-default-max-width: #{$default-max-width};
+  --ts-box-shadow: #{$ts-box-shadow};
+  --font-default: #{$default-font-family};
+}

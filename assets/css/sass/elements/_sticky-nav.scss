@@ -1,0 +1,42 @@
+/*-----------------------------------
+Sticky nav Styles
+------------------------------------*/
+.Sticky-nav-wrapper {
+  display: none;
+  @include transition(.3s);
+  @include minSmall {
+    display: none !important;
+  }
+  .sticky-nav {
+    @include flex;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $white;
+    justify-content: space-between;
+    padding: 0 1rem;
+    z-index: 990;
+    box-shadow: 0 0 10px 1px rgb(0 0 0 / 10%);
+    border-radius: 0.4rem 0.4rem 0 0;
+    .sticky-item {
+      @include flex;
+      flex-direction: column;
+      align-items: center;
+      margin: .4rem 0;
+      font-size: .8rem;
+      i {
+        font-size: 1.4rem;
+        color: $paragraph-color;
+      }
+      &.active {
+        color: var(--theme-default);
+        i {
+          color: var(--theme-default);
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+/*--------------------------------
+            My Account
+----------------------------------*/
+.ts-woo-nav {
+  box-shadow: rgb(0 0 0 / 0.04) 0 0 20px;
+  border-radius: 0.4rem;
+  background: #fff;
+  padding: 1rem;
+  li {
+    &.woocommerce-MyAccount-navigation-link {
+      padding: 1rem;
+      @include transition(.3s);
+      &:not(:last-child) {
+        border-bottom: dashed 1px #e7e7e7;
+      }
+
+      &:hover {
+        background: #e7e7e7;
+      }
+
+      &.is-active {
+        background: #e7e7e7;
+
+      }
+    }
+  }
+}
+
+.ts-woo-content {
+  box-shadow: rgb(0 0 0 / 0.04) 0 0 20px;
+  border-radius: 0.4rem;
+  background: #fff;
+  height: 100%;
+  padding: 1rem;
+  font-weight: 300;
+
+  .woocommerce-Addresses {
+    .woocommerce-Address {
+      box-shadow: rgb(0 0 0 / 0.04) 0 0 20px;
+      border-radius: 0.4rem;
+      background: #fff;
+      padding: 1rem;
+      margin: 1rem 0;
+      border: dashed 1px #e7e7e7
+    }
+  }
+
+  .woocommerce-order-details {
+    box-shadow: rgb(0 0 0 / 0.04) 0 0 20px;
+    border-radius: 0.4rem;
+    background: #fff;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: dashed 1px #e7e7e7
+  }
+}
+.woocommerce-orders-table__cell {
+  a {
+    background: #00a95a;
+    color: #fff;
+    line-height: normal !important;
+  }
+}

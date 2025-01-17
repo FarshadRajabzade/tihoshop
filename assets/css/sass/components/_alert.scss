@@ -1,0 +1,44 @@
+/*--------------------------------
+Add To Cart Toast Alert
+----------------------------------*/
+.add-to-cart-alert {
+  position: fixed;
+  top: 1rem;
+  right: 0;
+  @include flex;
+  align-items: center;
+  z-index: 99;
+  background-color: $white;
+  box-shadow: #ddd 0 0 5px;
+  padding: .8rem;
+  visibility: hidden;
+  opacity: 0;
+  @include transition(.3s);
+  @include minSmall {
+    top: 2rem;
+    right: 2rem;
+  }
+  img {
+    width: 70px;
+  }
+  .cart-details {
+    margin: 0 1rem;
+    .product-name {
+      font-weight: 600;
+    }
+  }
+}
+
+.woocommerce-info {
+  background: var(--theme-alert-info-bg) !important;
+  border-top: none !important;
+  border-radius: var(--theme-default-border-radius) !important;
+  color: var(--theme-alert-info-color) !important;
+}
+
+.woocommerce-message {
+  background: var(--theme-alert-success-bg) !important;
+  border-top: none;
+  border-radius: var(--theme-default-border-radius) !important;
+  color: var(--theme-alert-success-color) !important;
+}

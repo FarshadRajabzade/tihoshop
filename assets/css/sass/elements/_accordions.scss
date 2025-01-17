@@ -1,0 +1,34 @@
+/*-----------------------------------
+Accordions Styles
+------------------------------------*/
+.accordion {
+  .accordion-item {
+    border: solid 1px #ddd;
+    margin-top: 1rem;
+
+    &:not(first-of-type) {
+      border-top: solid 1px #ddd !important;
+    }
+
+  }
+
+  &.accordion-icon {
+    .accordion-item {
+      .accordion-header {
+        .accordion-button {
+          i {
+            margin-left: .54rem;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.accordion-button {
+  &:after {
+    margin-right: auto;
+    margin-left: 0 !important;
+  }
+}

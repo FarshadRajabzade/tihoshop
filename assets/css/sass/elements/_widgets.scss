@@ -1,0 +1,169 @@
+/*-------------------------------------
+Range Slider
+---------------------------------------*/
+
+.noUi-target {
+  width: 100%;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.noUi-horizontal {
+  .noUi-handle {
+    right: 0;
+    width: .34rem;
+    height: 1.8rem;
+    left: 1.6rem;
+  }
+}
+
+.noUi-handle {
+  border: none;
+  border-radius: 0;
+  background: $black;
+  box-shadow: none;
+
+  &:after, &:before {
+    display: none;
+  }
+}
+
+/*-------------------------------------
+Collapsible Widget
+---------------------------------------*/
+
+.widget {
+  .widget-title {
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    border-bottom: solid 1px #ddd;
+    padding: 1rem 0;
+
+    .widget-toggle-btn {
+      &:after {
+        content: '\f64d';
+        font-family: 'bootstrap-icons';
+        font-size: .8rem;
+        @include transition(.3s);
+      }
+    }
+
+    &.collapsed {
+      .widget-toggle-btn {
+        &:after {
+          @include transition(.3s);
+          content: '\f63b';
+          font-family: 'bootstrap-icons';
+          font-size: .8rem;
+        }
+      }
+    }
+  }
+
+  .widget-content {
+    ul {
+      > li {
+        padding: 1rem 0;
+
+        a {
+          color: inherit;
+
+          &:hover {
+            color: $link-hover-color;
+          }
+        }
+      }
+    }
+
+    .shop-filter-collection {
+      padding: 1rem 0;
+    }
+  }
+
+  &.widget-collapsible {
+    .widget-content {
+      display: none;
+    }
+  }
+
+  .widget-inline-text {
+    @include flex;
+    justify-content: space-between;
+
+    span {
+      color: $light-gray;
+      @include transition(.3s);
+    }
+
+    &:hover {
+      span {
+        color: $link-hover-color;
+      }
+    }
+  }
+}
+
+.widget-wrapper {
+  border: solid 3px var(--theme-default);
+  padding: 1rem;
+}
+
+/*-------------------------------------
+Wordpress Widgets
+---------------------------------------*/
+
+//search widget
+.wp-block-search__inside-wrapper {
+  .wp-block-search__input {
+    border-radius: 0.5rem;
+    border-color: #e7e7e7;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .wp-block-search__button {
+    border-radius: 0.5rem;
+    color: var(--theme-default);
+    border-color: var(--theme-default);
+    background-color: $white;
+  }
+}
+
+//latest posts
+.wp-block-latest-posts__list {
+  padding: 1rem 0 !important;
+  &:not(:last-child) {
+    li {
+      border-bottom: solid 1px #e7e7e7 !important;
+    }
+  }
+}
+
+//categories
+.wp-block-categories {
+  .cat-item {
+    background: #f8f8f8;
+    margin: 1rem 0;
+    padding: 0.7rem 0.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+  }
+}
+
+//social links
+.wp-block-social-links {
+  @include flex;
+  .wp-social-link {
+    &:not(:last-child) {
+      margin-left: 1rem;
+    }
+  }
+}
+

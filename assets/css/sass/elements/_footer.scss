@@ -1,0 +1,116 @@
+/*--------------------------------------
+Footer Styles
+----------------------------------------*/
+
+.footer {
+  .footer-title {
+    margin-bottom: 0;
+    margin-top: 1rem;
+    font-size: calc(1.1rem + 0.06vw);
+    border-bottom: solid #ddd 1px;
+    padding-bottom: 1rem;
+    @include minSmall {
+      margin-top: 0;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+
+  .footer-subtitle {
+    margin-bottom: 0;
+  }
+
+  .footer-top {
+    padding: 2rem 0;
+    border-bottom: solid #ddd 1px;
+
+    .subscribe {
+      @include flex;
+      justify-content: center;
+      border-right: none;
+      margin-bottom: 1rem;
+      @include minMedium {
+        justify-content: normal;
+        border-right: solid #ddd 1px;
+        margin-bottom: 0;
+      }
+
+      .footer-title {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .footer-middle {
+    padding: 2rem 0;
+
+    .footer-about {
+      .footer-logo {
+        margin-bottom: 1rem;
+        img {
+          max-width: 150px;
+        }
+      }
+
+      .footer-social {
+        margin-top: 1rem;
+
+        ul {
+          li {
+            font-size: 1.4rem;
+            display: inline-block;
+            padding-right: 2rem;
+            color: #666;
+
+            a {
+              color: inherit;
+
+              &:hover {
+                color: $link-hover-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer-links {
+      margin-top: 1.5rem;
+      line-height: 2;
+      @include minSmall {
+        margin-top: 0;
+      }
+
+      ul {
+        li {
+          color: $paragraph-color;
+          padding-top: 1rem;
+          font-size: .9rem;
+
+          a {
+            color: $paragraph-color;
+
+            &:hover {
+              color: $link-hover-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.footer-light {
+    background-color: $footer-light;
+  }
+
+}
+
+.float-btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  @include transition(.3s);
+}
